@@ -1,0 +1,19 @@
+<h1>Enter This Raffle to Win a New Car!</h1>
+Please enter your first name, last name, and email.<br>
+First name; <input type="text" id= "firstName"> <br>
+Last name; <input type="text" id= "lastName"> <br>
+Email; <input type="text" id=email> <br>
+
+    <input type="button"
+    value="Enter"
+    onclick="entryInfo()">
+    <br>
+    
+    <script>
+        function entryInfo() {
+            let nameOne = document.getElementById("firstName").value
+            let nameTwo = document.getElementById("lastName").value
+            let contact = document.getElementById("email").value
+            alert("You are now entered into the raffle, " + nameOne +" "+ nameTwo + ". Good Luck. We will contact you at " + contact);
+        }
+    </script>
